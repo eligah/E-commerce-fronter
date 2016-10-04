@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>食品</title>
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/index.css" rel="stylesheet">
+    <link href="../css/adaptimg.css" rel="stylesheet">
+
+    <link href="../css/bargraph.css" rel="stylesheet">
+    <script src="../js/d3.js"></script>
+    <script src="../js/jquery.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-default" role="navigation" style="margin-bottom: 0">
+    <div class="navbar-header">
+        <a class="navbar-brand" href="../index.html">首页</a>
+    </div>
+    <div>
+        <ul class="nav navbar-nav">
+            <li><a href=TR_SMJD.html>数码家电</a></li>
+            <li><a href="TR_FS.html">服饰</a></li>
+            <li><a href="TR_HZP.html">化妆品</a></li>
+            <li><a href="TR_MY.html">母婴</a></li>
+            <li><a href="TR_SP.html">食品</a></li>
+            <li><a href="TR_WT.html">文体</a></li>
+            <li><a href="TR_JJ.html">家居</a></li>
+            <li><a href="TR_ZH.html">车/玩具/宠物</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="jumbotron"
+     style="background: url(../img/background/TR_SP.jpg) no-repeat ;background-size: cover ">
+    <div class="container">
+        <br />
+        <br />
+        <br />
+        <br />
+        <img id="jumbotron-icon" src="../img/icon/white/TR_SP.png" />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <p  id="jumbotron-title">食品</p>
+        <br />
+
+        <br />
+        <br />
+        <br />
+        <br />
+        <a id="side"  page-scroll="#scrolltotable" >
+            <img   id="jumbotron-arrow" src="../img/icon/white/arrow.png"/>
+        </a>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+
+    </div>
+</div>
+<div id="scrolltotable">
+    <div class="container">
+        <div class="row row-bottomborder">
+            <div class="col-lg-3 has-right-border">
+                <table       class=" table table-condensed ">
+                    <h2>休闲零食</h2>
+                    <tbody>
+                    <tr>
+                        <td><a>巧克力</a></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-lg-3 has-right-border">
+                <table       class=" table table-condensed ">
+                    <h2>冲饮品</h2>
+                    <tbody>
+                    <tr>
+                        <td><a>咖啡制品</a></td>
+                    </tr>
+                    <tr>
+                        <td><a>天然粉粉食品</a></td>
+                    </tr>
+                    <tr>
+                        <td><a>藕粉/冲泡制品</a></td>
+                    </tr>
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-lg-3 has-right-border ">
+                <table       class=" table table-condensed ">
+                    <h2>民生食品</h2>
+                    <tbody>
+                    <tr>
+                        <td><a>蔬果水产</a></td>
+                    </tr>
+                    <tr>
+                        <td><a>油/米/杂粮</a></td>
+                    </tr>
+                    <tr>
+                        <td><a>火腿/腌腊/禽蛋制品</a></td>
+                    </tr>
+                    <tr>
+                        <td><a>调味品/果酱/沙拉</a></td>
+                    </tr>
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-lg-3  ">
+                <table       class=" table table-condensed ">
+                    <h2>茶叶饮品</h2>
+                    <tbody>
+                    <tr>
+                        <td><a>铁观音/乌龙茶</a></td>
+                    </tr>
+                    <tr>
+                        <td><a>普洱</a></td>
+                    </tr>
+                    <tr>
+                        <td><a>花草/果味/保健茶</a></td>
+                    </tr>
+                    <tr>
+                        <td><a>祁门红茶/红茶</a></td>
+                    </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+
+    </div>
+</div>
+<div id="svgcontainer" class="container">
+    <p id="loadingajax"></p>
+    <p id="secondtitle"></p>
+    <svg></svg>
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="../js/bootstrap.js"></script>
+<script src="../js/scrolltoAnchor.js"></script>
+<script src="../js/addsvg.js"></script>
+</body>
+
+</html>

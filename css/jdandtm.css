@@ -1,0 +1,47 @@
+.navbar-header  .navbar-brand {
+    color: #d50000;!important;
+}
+.navbar{
+   margin-bottom: 0px;!important;
+}
+#scrolltotable{
+    margin-top: 110px;
+}
+
+#jumbotron-arrow{
+    position: absolute;
+    left: 50%;
+    height:30px ;
+    width:30px;
+}
+
+#jumbotron-title{
+    color:white;
+    font-size: 25px;
+    font-weight: 100;
+    text-align: center;
+}
+#loadingajax{
+    font-size:15px;
+    text-align: center;
+}
+#rank{
+    padding-left: 30%;
+}
+
+.rankname{
+    font-size: 10px;
+    text-anchor: start;
+}
+
+.ranknum{
+    font-size: 10px;
+    text-anchor: middle;
+    fill:red;
+}
+#secondtitle{
+    font-size: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+

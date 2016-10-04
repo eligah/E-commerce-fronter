@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>化妆品</title>
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/index.css" rel="stylesheet">
+    <link href="../css/adaptimg.css" rel="stylesheet">
+
+    <link href="../css/bargraph.css" rel="stylesheet">
+    <script src="../js/d3.js"></script>
+    <script src="../js/jquery.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-default" role="navigation" style="margin-bottom: 0">
+    <div class="navbar-header">
+        <a class="navbar-brand" href="../index.html">首页</a>
+    </div>
+    <div>
+        <ul class="nav navbar-nav">
+            <li><a href=TR_SMJD.html>数码家电</a></li>
+            <li><a href="TR_FS.html">服饰</a></li>
+            <li><a href="TR_HZP.html">化妆品</a></li>
+            <li><a href="TR_MY.html">母婴</a></li>
+            <li><a href="TR_SP.html">食品</a></li>
+            <li><a href="TR_WT.html">文体</a></li>
+            <li><a href="TR_JJ.html">家居</a></li>
+            <li><a href="TR_ZH.html">车/玩具/宠物</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="jumbotron"
+     style="background: url(../img/background/TR_HZP.jpg) no-repeat ;background-size: cover ">
+    <div class="container">
+        <br />
+        <br />
+        <br />
+        <br />
+        <img id="jumbotron-icon" src="../img/icon/white/TR_HZP.png" />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <p  id="jumbotron-title">化妆品</p>
+        <br />
+
+        <br />
+        <br />
+        <br />
+        <br />
+        <a id="side"  page-scroll="#scrolltotable" >
+            <img   id="jumbotron-arrow" src="../img/icon/white/arrow.png"/>
+        </a>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+
+    </div>
+</div>
+<div id="scrolltotable">
+    <div class="container">
+        <div class="row row-bottomborder">
+            <div class="col-lg-4 has-right-border">
+                <table       class=" table table-condensed ">
+                    <h2>美容护肤</h2>
+                    <tbody>
+                    <tr>
+                        <td><a>眼部护理</a></td>
+                        <td><a>面膜</a></td>
+                        <td><a>乳液/面霜</a></td>
+                    </tr>
+                    <tr>
+                        <td><a>防晒霜</a></td>
+                        <td><a>化妆水/爽肤水</a></td>
+                        <td><a>洁面</a></td>
+                    </tr>
+                    <tr>
+                        <td><a>卸妆</a></td>
+                        <td><a>面部去角质</a></td>
+                        <td><a>唇部护理</a></td>
+                    </tr>
+                    <tr>
+                        <td><a>面部按摩霜</a></td>
+                        <td><a>面部精华</a></td>
+                    </tr>
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-lg-4 has-right-border">
+                <table       class=" table table-condensed ">
+                    <h2>香水/魅力彩妆</h2>
+                    <tbody>
+                    <tr>
+                        <td><a>粉饼</a></td>
+                        <td><a>时尚香水</a></td>
+                        <td><a>唇膏/口红</a></td>
+                    </tr>
+                    <tr>
+                        <td><a>指甲油/美甲</a></td>
+                        <td><a>粉底液/膏</a></td>
+                    </tr>
+                    <tr>
+                        <td><a>魅惑眼影</a></td>
+                        <td><a>唇彩/唇蜜</a></td>
+                    </tr>
+                    <tr>
+                        <td><a>腮红/胭脂</a></td>
+                        <td><a>蜜粉/散粉</a></td>
+                    </tr>
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-lg-4 ">
+                <table       class=" table table-condensed ">
+                    <h2>身体护理</h2>
+                    <tbody>
+                    <tr>
+                        <td><a>身体保养</a></td>
+                    </tr>
+                    <tr>
+                        <td><a>胸部护理</a></td>
+                    </tr>
+                    <tr>
+                        <td><a>精油芳疗</a></td>
+                    </tr>
+                    <tr>
+                        <td><a>手部保养</a></td>
+                    </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="svgcontainer" class="container">
+    <p id="loadingajax"></p>
+    <p id="secondtitle"></p>
+    <svg></svg>
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="../js/bootstrap.js"></script>
+<script src="../js/scrolltoAnchor.js"></script>
+<script src="../js/addsvg.js"></script>
+</body>
+
+</html>

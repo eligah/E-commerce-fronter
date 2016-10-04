@@ -1,0 +1,76 @@
+.row-bottomborder{
+    margin-bottom: 50px;
+}
+.no-border {
+    border: 1px solid transparent !important;
+}
+.has-right-border {
+    height:250px;
+    border-collapse: collapse;
+    border-right: 1px solid rgb(141,141,141);
+}
+
+div h2{
+    font-size: 21px;
+    text-align:center;
+    border-bottom: 10px;
+}
+
+table td{
+    text-align: center;
+    padding: 2px 3px 2px;
+}
+
+.table-condensed > tfoot > tr > td {
+    padding: 2px 3px 2px;
+}
+table tr{
+}
+
+ table a{
+    color: rgb(141,141,141);
+     font-size: 12px;
+     text-decoration:none;
+     cursor:pointer;
+}
+ table a:hover{
+     color:black;
+     text-decoration:none;
+ }
+ #scrolltotable{
+     margin-top: 110px;
+ }
+
+#jumbotron-icon{
+     position: absolute;
+     left: 46%;
+     height:100px ;
+     width:100px;
+ }
+#jumbotron-arrow{
+      position: absolute;
+      left: 49%;
+      height:30px ;
+      width:30px;
+  }
+
+#jumbotron-title{
+    color:white;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 100;
+}
+#svgcontainer{
+    margin-top: 50px;
+}
+#loadingajax{
+    font-size: 12px;
+    text-align: center;
+}
+#secondtitle{
+    font-size: 18px;!important;
+    text-align: center;
+}
+#svgcontainer svg{
+    padding-left: 20%;
+}

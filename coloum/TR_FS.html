@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>服饰</title>
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/index.css" rel="stylesheet">
+    <link href="../css/adaptimg.css" rel="stylesheet">
+
+    <link href="../css/bargraph.css" rel="stylesheet">
+    <script src="../js/d3.js"></script>
+    <script src="../js/jquery.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-default" role="navigation" style="margin-bottom: 0">
+    <div class="navbar-header">
+        <a class="navbar-brand" href="../index.html">首页</a>
+    </div>
+    <div>
+        <ul class="nav navbar-nav">
+            <li><a href=TR_SMJD.html>数码家电</a></li>
+            <li><a href="TR_FS.html">服饰</a></li>
+            <li><a href="TR_HZP.html">化妆品</a></li>
+            <li><a href="TR_MY.html">母婴</a></li>
+            <li><a href="TR_SP.html">食品</a></li>
+            <li><a href="TR_WT.html">文体</a></li>
+            <li><a href="TR_JJ.html">家居</a></li>
+            <li><a href="TR_ZH.html">车/玩具/宠物</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="jumbotron"
+     style="background: url(../img/background/TR_FS.jpg) no-repeat ;background-size: cover ">
+    <div class="container">
+        <br />
+        <br />
+        <br />
+        <br />
+        <img id="jumbotron-icon" src="../img/icon/white/TR_FS.png" />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <p  id="jumbotron-title">服饰</p>
+        <br />
+
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <a id="side"  page-scroll="#scrolltotable" >
+            <img   id="jumbotron-arrow" src="../img/icon/white/arrow.png"/>
+        </a>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+
+    </div>
+</div>
+<div id="scrolltotable">
+    <div class="container">
+        <div class="row row-bottomborder">
+            <div class="col-lg-5 has-right-border">
+                <table       class=" table table-condensed ">
+                    <h2>时尚女装</h2>
+                    <tbody>
+                    <tr>
+                        <td><a>连衣裙</a></td>
+                        <td><a>T恤</a></td>
+                        <td><a>半身裙</a></td>
+                        <td><a>牛仔裤</a></td>
+                        <td><a>衬衫</a></td>
+                        <td><a>蕾丝/雪纺衫</a></td>
+                    </tr>
+                    <tr>
+                        <td><a>毛呢外套</a></td>
+                        <td><a>毛衣</a></td>
+                        <td><a>休闲长裤</a></td>
+                        <td><a>卫衣/绒衫</a></td>
+                        <td><a>女士西装</a></td>
+                        <td><a>裤子</a></td>
+                    </tr>
+                    <tr>
+                        <td><a>婚纱/礼服</a></td>
+                        <td><a>中老年服装</a></td>
+                        <td><a>风衣</a></td>
+                        <td><a>民族/舞台服</a></td>
+                        <td><a>背心/吊带</a></td>
+                    </tr>
+                    <tr>
+                        <td><a>羽绒服</a></td>
+                        <td><a>短外套</a></td>
+                        <td><a>工作制服</a></td>
+                        <td><a>女士皮衣</a></td>
+                        <td><a>马甲</a></td>
+                        <td><a>打底裤</a></td>
+                    </tr>
+                    <tr>
+                        <td><a>棉衣/棉服</a></td>
+                        <td><a>女士皮草</a></td>
+                        <td><a>特大特小西装</a></td>
+                        <td><a>学生校服</a></td>
+                        <td><a>针织衫</a></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-lg-3 has-right-border">
+                <table       class=" table table-condensed ">
+                    <h2>靓丽女鞋</h2>
+                    <tbody>
+                    <tr>
+                        <td><a>凉鞋</a></td>
+                        <td><a>帆布鞋</a></td>
+                        <td><a>雨鞋</a></td>
+                    </tr>
+                    <tr>
+                        <td><a>低帮鞋</a></td>
+                        <td><a>高帮鞋</a></td>
+                        <td><a>拖鞋</a></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-lg-4 ">
+                <table       class=" table table-condensed ">
+                    <h2>帅气男装</h2>
+                    <tbody>
+                    <tr>
+                        <td><a>夹克</a></td>
+                        <td><a>羽绒服</a></td>
+                        <td><a>皮衣</a></td>
+                        <td><a>休闲裤</a></td>
+                    </tr>
+                    <tr>
+                        <td><a>衬衫</a></td>
+                        <td><a>卫衣</a></td>
+                        <td><a>牛仔裤</a></td>
+                        <td><a>毛衣</a></td>
+                    </tr>
+                    <tr>
+                        <td><a>风衣</a></td>
+                        <td><a>西服</a></td>
+                        <td><a>T恤</a></td>
+                        <td><a>棉衣</a></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            </div>
+
+        <div class="row">
+            <div class="col-lg-3 has-right-border">
+                <table       class=" table table-condensed ">
+                    <h2>流行男鞋</h2>
+                    <tbody>
+                    <tr>
+                        <td><a>低帮鞋</a></td>
+                        <td><a>帆布鞋</a></td>
+                        <td><a>高帮鞋</a></td>
+                    </tr>
+                    <tr>
+                        <td><a>拖鞋</a></td>
+                        <td><a>凉鞋</a></td>
+                        <td><a>靴子</a></td>
+                        <td><a>雨鞋</a></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-lg-4 has-right-border">
+                <table       class=" table table-condensed ">
+                    <h2>内衣/家居服</h2>
+                    <tbody>
+                    <tr>
+                        <td><a>睡衣/家居服套装</a></td>
+                        <td><a>袜子</a></td>
+                        <td><a>睡裤</a></td>
+                    </tr>
+                    <tr>
+                        <td><a>睡裙</a></td>
+                        <td><a>文胸</a></td>
+                        <td><a>塑身连体衣</a></td>
+                        <td><a>内裤</a></td>
+                    </tr>
+                    <tr>
+                        <td><a>文胸套装</a></td>
+                        <td><a>睡袍/浴袍</a></td>
+                        <td><a>保暖套装</a></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-lg-2 has-right-border">
+                <table       class=" table table-condensed ">
+                    <h2>精品箱包</h2>
+                    <tbody>
+                    <tr>
+                        <td><a>女士包袋</a></td>
+                        <td><a>钱包</a></td>
+                    </tr>
+                    <tr>
+                        <td><a>旅行箱</a></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-lg-2 ">
+                <table       class=" table table-condensed ">
+                    <h2>璀璨珠宝</h2>
+                    <tbody>
+                    <tr>
+                        <td><a>奢华洛世奇</a></td>
+                        <td><a>天然珍珠</a></td>
+                    </tr>
+                    <tr>
+                        <td><a>铂金首饰</a></td>
+                        <td><a>黄金首饰</a></td>
+                    </tr>
+                    <tr>
+                        <td><a>钻石首饰</a></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="svgcontainer" class="container">
+    <p id="loadingajax"></p>
+    <p id="secondtitle"></p>
+    <svg></svg>
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="../js/bootstrap.js"></script>
+<script src="../js/scrolltoAnchor.js"></script>
+<script src="../js/addsvg.js"></script>
+</body>
+
+</html>

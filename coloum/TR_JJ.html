@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>家居</title>
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/index.css" rel="stylesheet">
+    <link href="../css/adaptimg.css" rel="stylesheet">
+
+    <link href="../css/bargraph.css" rel="stylesheet">
+    <script src="../js/d3.js"></script>
+    <script src="../js/jquery.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-default" role="navigation" style="margin-bottom: 0">
+    <div class="navbar-header">
+        <a class="navbar-brand" href="../index.html">首页</a>
+    </div>
+    <div>
+        <ul class="nav navbar-nav">
+            <li><a href=TR_SMJD.html>数码家电</a></li>
+            <li><a href="TR_FS.html">服饰</a></li>
+            <li><a href="TR_HZP.html">化妆品</a></li>
+            <li><a href="TR_MY.html">母婴</a></li>
+            <li><a href="TR_SP.html">食品</a></li>
+            <li><a href="TR_WT.html">文体</a></li>
+            <li><a href="TR_JJ.html">家居</a></li>
+            <li><a href="TR_ZH.html">车/玩具/宠物</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="jumbotron"
+     style="background: url(../img/background/TR_JJ.jpg) no-repeat ;background-size: cover ">
+    <div class="container">
+        <br />
+        <br />
+        <br />
+        <br />
+        <img id="jumbotron-icon" src="../img/icon/white/TR_JJ.png" />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <p  id="jumbotron-title">家居</p>
+        <br />
+
+        <br />
+        <br />
+        <br />
+        <br />
+        <a id="side"  page-scroll="#scrolltotable" >
+            <img   id="jumbotron-arrow" src="../img/icon/white/arrow.png"/>
+        </a>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+
+    </div>
+</div>
+<div id="scrolltotable">
+    <div class="container">
+        <div class="row row-bottomborder">
+            <div class="col-lg-3 has-right-border">
+                <table       class=" table table-condensed ">
+                    <h2>日用/礼品</h2>
+                    <tbody>
+                    <tr>
+                        <td><a>创意礼品</a></td>
+                        <td><a>钟表</a></td>
+                        <td><a>保暖贴/保暖用品</a></td>
+                    </tr>
+                    <tr>
+                        <td><a>竹炭包</a></td>
+                        <td><a>庆典用品</a></td>
+                        <td><a>伞具/雨具</a></td>
+
+                    </tr>
+                    <tr>
+                        <td><a>防护用品</a></td>
+                        <td><a>卫浴/配件</a></td>
+                        <td><a>鞋用品</a></td>
+                    </tr>
+                    <tr>
+                        <td><a>家用五金</a></td>
+                        <td><a>风扇/配件</a></td>
+                        <td><a>增高减肥用品</a></td>
+                    </tr>
+                    <tr>
+                        <td><a>驱虫用品</a></td>
+                        <td><a>香薰用品</a></td>
+                    </tr>
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-lg-3 has-right-border">
+                <table       class=" table table-condensed ">
+                    <h2>床品/布艺</h2>
+                    <tbody>
+                    <tr>
+                        <td><a>毛毯/珊瑚绒毯</a></td>
+                        <td><a>抱枕/坐垫</a></td>
+                    </tr>
+                    <tr>
+                        <td><a>枕头/保健枕</a></td>
+                        <td><a>蚊帐</a></td>
+                        <td><a>夏日凉席</a></td>
+                    </tr>
+                    <tr>
+                        <td><a>浴巾/浴袍</a></td>
+                        <td><a>床品套件</a></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-lg-3 has-right-border ">
+                <table       class=" table table-condensed ">
+                    <h2>厨房/餐饮</h2>
+                    <tbody>
+                    <tr>
+                        <td><a>厨用小工具</a></td>
+                        <td><a>烹饪用具</a></td>
+                    </tr>
+                    <tr>
+                        <td><a>瓷器餐具套装</a></td>
+                        <td><a>酒具/酒杯</a></td>
+                    </tr>
+                    <tr>
+                        <td><a>保鲜容器/保鲜器皿</a></td>
+                    </tr>
+                    <tr>
+                        <td><a>烧烤/烘焙</a></td>
+                        <td><a>餐具笼/架</a></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-lg-3 ">
+                <table       class=" table table-condensed ">
+                    <h2>日化/清洁</h2>
+                    <tbody>
+                    <tr>
+                        <td><a>驱虫用品</a></td>
+                    </tr>
+                    <tr>
+                        <td><a>香薰用品</a></td>
+                    </tr>
+                    <tr>
+                        <td><a>衣物清洁/护理</a></td>
+                    </tr>
+                    <tr>
+                        <td><a>家务/地板清洁用具</a></td>
+                    </tr>
+                    <tr>
+                        <td><a>个人洗浴清洁</a></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="row row-bottomborder">
+            <div class="col-lg-4 has-right-border">
+                <table       class=" table table-condensed ">
+                    <h2>折扣卷</h2>
+                    <tbody>
+                    <tr>
+                        <td><a>美容美发/美体健身</a></td>
+                        <td><a>户外活动</a></td>
+                        <td><a>西餐/东南亚美食</a></td>
+                    </tr>
+                    <tr>
+                        <td><a>足浴/洗浴/按摩</a></td>
+                        <td><a>运动健身</a></td>
+                        <td><a>KTV/酒吧/俱乐部</a></td>
+                    </tr>
+                    <tr>
+                        <td><a>面包/月饼/蛋糕</a></td>
+                        <td><a>快餐/小吃券</a></td>
+                        <td><a>演出票务</a></td>
+                    </tr>
+                    <tr>
+                        <td><a>自助餐餐券</a></td>
+                        <td><a>休闲/桌游/DIY</a></td>
+                        <td><a>网络店铺代金券</a></td>
+                    </tr>
+                    <tr>
+                        <td><a>冷饮/咖啡/茶楼</a></td>
+                        <td><a>食品提货券</a></td>
+                        <td><a>其他折扣券</a></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-lg-2 has-right-border">
+                <table       class=" table table-condensed ">
+                    <h2>成人用品</h2>
+                    <tbody>
+                    <tr>
+                        <td><a>计生用品</a></td>
+                    </tr>
+                    <tr>
+                        <td><a>男用器具</a></td>
+                    </tr>
+                    <tr>
+                        <td><a>女用器具</a></td>
+                    </tr>
+                    <tr>
+                        <td><a>情趣用品</a></td>
+                    </tr>
+                    <tr>
+                        <td><a>情趣内衣</a></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-lg-2 has-right-border">
+                <table       class=" table table-condensed ">
+                    <h2>商业/办公家具</h2>
+                    <tbody>
+                    <tr>
+                        <td><a>办公桌</a></td>
+                    </tr>
+                    <tr>
+                        <td><a>办公椅</a></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-lg-3 ">
+                <table       class=" table table-condensed ">
+                    <h2>布艺软饰</h2>
+                    <tbody>
+                    <tr>
+                        <td><a>地毯</a></td>
+                        <td><a>布艺窗帘</a></td>
+                        <td><a>地垫</a></td>
+                    </tr>
+                    <tr>
+                        <td><a>餐桌布艺</a></td>
+                        <td><a>十字绣工具/配件</a></td>
+                    </tr>
+                    <tr>
+                        <td><a>收纳盒</a></td>
+                        <td><a>挂毯/壁毯</a></td>
+                        <td><a>杯垫</a></td>
+                    </tr>
+                    <tr>
+                        <td><a>沙发套/沙发巾</a></td>
+                        <td><a>刺绣</a></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+        <div class="row ">
+            <div class="col-lg-3 has-right-border">
+                <table       class=" table table-condensed ">
+                    <h2>工艺饰品</h2>
+                    <tbody>
+                    <tr>
+                        <td><a>装饰摆件</a></td>
+                        <td><a>花瓶</a></td>
+                        <td><a>装饰画</a></td>
+                    </tr>
+                    <tr>
+                        <td><a>相片墙</a></td>
+                        <td><a>粘饰</a></td>
+                        <td><a>像框/相架/画框</a></td>
+                    </tr>
+                    <tr>
+                        <td><a>香味蜡烛</a></td>
+                        <td><a>创意饰品</a></td>
+                        <td><a>饰品盒</a></td>
+                    </tr>
+                    <tr>
+                        <td><a>仿真花卉/盆景</a></td>
+                        <td><a>台钟/闹钟</a></td>
+                    </tr>
+                    <tr>
+                        <td><a>挂钟/落地钟</a></td>
+                        <td><a>雕刻工艺</a></td>
+                        <td><a>烛台</a></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-lg-3 has-right-border">
+                <table       class=" table table-condensed ">
+                    <h2>家装主材</h2>
+                    <tbody>
+                    <tr>
+                        <td><a>卫浴家具</a></td>
+                        <td><a>卫浴五金/挂件</a></td>
+                    </tr>
+                    <tr>
+                        <td><a>落地灯</a></td>
+                        <td><a>电热水器</a></td>
+                        <td><a>卫浴龙头</a></td>
+                    </tr>
+                    <tr>
+                        <td><a>床头台灯</a></td>
+                        <td><a>艺术吊灯</a></td>
+                        <td><a>玻化砖</a></td>
+                    </tr>
+                    <tr>
+                        <td><a>厨房龙头</a></td>
+                        <td><a>强化复合地板</a></td>
+                    </tr>
+                    <tr>
+                        <td><a>实木地板</a></td>
+                        <td><a>多功能浴霸</a></td>
+                    </tr>
+                    <tr>
+                        <td><a>艺术顶灯</a></td>
+                        <td><a>厨盆/水槽</a></td>
+                        <td><a>坐便器</a></td>
+                    </tr>
+                    <tr>
+                        <td><a>燃气热水器</a></td>
+                        <td><a>洗面盆</a></td>
+                        <td><a>浴缸</a></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-lg-3 has-right-border">
+                <table       class=" table table-condensed ">
+                    <h2>住宅家具</h2>
+                    <tbody>
+                    <tr>
+                        <td><a>柜类</a></td>
+                        <td><a>设计师家具</a></td>
+                        <td><a>屏风类</a></td>
+                    </tr>
+                    <tr>
+                        <td><a>户外家具</a></td>
+                        <td><a>床类</a></td>
+                        <td><a>案/台类</a></td>
+                    </tr>
+                    <tr>
+                        <td><a>衣柜</a></td>
+                        <td><a>儿童床</a></td>
+                        <td><a>实木床</a></td>
+                    </tr>
+                    <tr>
+                        <td><a>镜子类</a></td>
+                        <td><a>床垫类</a></td>
+                        <td><a>懒人沙发</a></td>
+                    </tr>
+                    <tr>
+                        <td><a>沙发床</a></td>
+                        <td><a>椅子</a></td>
+                        <td><a>电视柜</a></td>
+                        <td><a>餐桌</a></td>
+                    </tr>
+                    <tr>
+                        <td><a>床头柜</a></td>
+                        <td><a>梳妆台/桌</a></td>
+                        <td><a>衣帽架 </a></td>
+                    </tr>
+                    <tr>
+                        <td><a>折叠桌</a></td>
+                        <td><a>茶几</a></td>
+                        <td><a>书柜</a></td>
+                        <td><a>格架</a></td>
+                    </tr>
+                    <tr>
+                        <td><a>电脑桌</a></td>
+                        <td><a>鞋柜</a></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-lg-3">
+                <table       class=" table table-condensed ">
+                    <h2>五金/工具</h2>
+                    <tbody>
+                    <tr>
+                        <td><a>电动工具</a></td>
+                        <td><a>手动工具</a></td>
+                    </tr>
+                    <tr>
+                        <td><a>家用五金</a></td>
+                        <td><a>开关</a></td>
+                    </tr>
+                    <tr>
+                        <td><a>仪器仪表</a></td>
+                        <td><a>插座</a></td>
+                    </tr>
+                    <tr>
+                        <td><a>接线板/插头</a></td>
+                        <td><a>电线</a></td>
+                    </tr>
+                    <tr>
+                        <td><a>布线箱</a></td>
+                        <td><a>交换器</a></td>
+                    </tr>
+                    <tr>
+                        <td><a>机电五金</a></td>
+                        <td><a>转换器</a></td>
+                    </tr>
+                    <tr>
+                        <td><a>节电器</a></td>
+                        <td><a>变压器</a></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+
+
+    </div>
+</div>
+<div id="svgcontainer" class="container">
+    <p id="loadingajax"></p>
+    <p id="secondtitle"></p>
+    <svg></svg>
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="../js/bootstrap.js"></script>
+<script src="../js/scrolltoAnchor.js"></script>
+<script src="../js/addsvg.js"></script>
+</body>
+
+</html>

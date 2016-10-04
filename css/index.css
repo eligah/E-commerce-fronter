@@ -1,0 +1,63 @@
+.thumbnail {
+    border: 0px;
+    padding: 30px 0px 30px
+}
+
+p{
+    font-size: 3.5em;
+    letter-spacing:0.3em;
+    line-height:200%;
+}
+.navbar-default{
+    padding-top: 30px;
+}
+.iconshow {
+    padding-top: 50px;
+}
+
+.iconshow h3{
+    font-size: 1.3em;
+    text-align: center;
+    margin-top: 20px;
+}
+.iconshow div:last-child{
+    border-right:none;
+    padding-right: 0px;
+}
+#msg{
+    text-align: center;
+    font-size: 20px;
+}
+#lastelement{
+    padding: 30px 10px 0px;
+}
+.thumb-right-border{
+    padding: 30px 10px 10px;
+    border-right: 1px solid rgb(100,100,100);
+}
+
+a {
+    color:black;
+    text-decoration:none;
+}
+a:hover {
+    color: white;
+    text-decoration:none;
+}
+
+.extra-link{
+    font-size:12px;
+    padding: 0px 20px 0px;
+}
+.extra-link a{
+    color:#777;
+}
+.extra-link a:hover{
+    color: black;
+}
+.navbar{
+     padding-top: 5px;!important;
+ }
+.navbar-header  .navbar-brand {
+    color: #ff7d00;!important;
+}

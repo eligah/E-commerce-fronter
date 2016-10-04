@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>文体</title>
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/index.css" rel="stylesheet">
+    <link href="../css/adaptimg.css" rel="stylesheet">
+
+    <link href="../css/bargraph.css" rel="stylesheet">
+    <script src="../js/d3.js"></script>
+    <script src="../js/jquery.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-default" role="navigation" style="margin-bottom: 0">
+    <div class="navbar-header">
+        <a class="navbar-brand" href="../index.html">首页</a>
+    </div>
+    <div>
+        <ul class="nav navbar-nav">
+            <li><a href=TR_SMJD.html>数码家电</a></li>
+            <li><a href="TR_FS.html">服饰</a></li>
+            <li><a href="TR_HZP.html">化妆品</a></li>
+            <li><a href="TR_MY.html">母婴</a></li>
+            <li><a href="TR_SP.html">食品</a></li>
+            <li><a href="TR_WT.html">文体</a></li>
+            <li><a href="TR_JJ.html">家居</a></li>
+            <li><a href="TR_ZH.html">车/玩具/宠物</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="jumbotron"
+     style="background: url(../img/background/TR_WT.jpg) no-repeat ;background-size: cover ">
+    <div class="container">
+        <br />
+        <br />
+        <br />
+        <br />
+        <img id="jumbotron-icon" src="../img/icon/white/TR_WT.png" />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <p  id="jumbotron-title">文体</p>
+        <br />
+
+        <br />
+        <br />
+        <br />
+        <br />
+        <a id="side"  page-scroll="#scrolltotable" >
+            <img   id="jumbotron-arrow" src="../img/icon/white/arrow.png"/>
+        </a>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+
+    </div>
+</div>
+<div id="scrolltotable">
+    <div class="container">
+        <div class="row row-bottomborder">
+            <div class="col-lg-6 has-right-border">
+                <table       class=" table table-condensed ">
+                    <h2>活力户外</h2>
+                    <tbody>
+                    <tr>
+                        <td><a>户外鞋袜</a></td>
+                        <td><a>手电筒/灯具</a></td>
+                    </tr>
+                    <tr>
+                        <td><a>登山包</a></td>
+                        <td><a>睡袋</a></td>
+                        <td><a>旅行便携装备</a></td>
+                    </tr>
+                    <tr>
+                        <td><a>洗漱清洁用品</a></td>
+                        <td><a>户外服装</a></td>
+                    </tr>
+                    <tr>
+                        <td><a>钓竿</a></td>
+                        <td><a>炉具/燃料/点火器</a></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-lg-6 ">
+                <table       class=" table table-condensed ">
+                    <h2>健康运动</h2>
+                    <tbody>
+                    <tr>
+                        <td><a>帆布鞋</a></td>
+                        <td><a>跑步鞋</a></td>
+                        <td><a>泳衣</a></td>
+                    </tr>
+                    <tr>
+                        <td><a>羽毛球拍</a></td>
+                        <td><a>诱惑比基尼</a></td>
+                    </tr>
+                    <tr>
+                        <td><a>中小型健身器材</a></td>
+                        <td><a>篮球</a></td>
+                    </tr>
+                    <tr>
+                        <td><a>乒乓球</a></td>
+                        <td><a>舞蹈/健美操/体操</a></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4 has-right-border">
+                <table       class=" table table-condensed ">
+                    <h2>投资收藏</h2>
+                    <tbody>
+                    <tr>
+                        <td><a>陶器瓷器</a></td>
+                        <td><a>宗教收藏品</a></td>
+                        <td><a>钱币</a></td>
+                    </tr>
+                    <tr>
+                        <td><a>其他收藏品</a></td>
+                        <td><a>书法/绘画</a></td>
+                    </tr>
+                    <tr>
+                        <td><a>古玩杂项</a></td>
+                        <td><a>趣味收藏</a></td>
+                        <td><a>邮票</a></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-lg-4 has-right-border">
+                <table       class=" table table-condensed ">
+                    <h2>度假旅游</h2>
+                    <tbody>
+                    <tr>
+                        <td><a>酒店客栈</a></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-lg-4 ">
+                <table       class=" table table-condensed ">
+                    <h2>乐器/配件</h2>
+                    <tbody>
+                    <tr>
+                        <td><a>乐器配件</a></td>
+                        <td><a>MIDI乐器/电脑音乐</a></td>
+                    </tr>
+                    <tr>
+                        <td><a>乐器定制/出租</a></td>
+                        <td><a>民族乐器</a></td>
+                    </tr>
+                    <tr>
+                        <td><a>儿童玩具乐器</a></td>
+                        <td><a>其他西洋乐器</a></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+    </div>
+<div id="svgcontainer" class="container">
+    <p id="loadingajax"></p>
+    <p id="secondtitle"></p>
+    <svg></svg>
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="../js/bootstrap.js"></script>
+<script src="../js/scrolltoAnchor.js"></script>
+<script src="../js/addsvg.js"></script>
+</body>
+
+</html>
+</body>
+
+</html>
